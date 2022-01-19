@@ -16,8 +16,8 @@ namespace ArraysAndLists
              * Name one List "evens"
              * Name the other List "odds"
              */
-          List<int> evensList = new List<int>();
-          List<int> oddsList = new List<int>();
+            List<int> evensList = new List<int>();
+            List<int> oddsList = new List<int>();
 
 
             /* Using either a foreach or for loop,
@@ -28,35 +28,49 @@ namespace ArraysAndLists
              */
             for (var i = 0; i < 10; i++)
             {
-                if (i % 2 == 0);
-            }
-            {
-            evensList.Add(10);
-            }
-          
-           for (var i = 0;i < 10;i--)
-                if(i % 2 == 0)
+                if (i % 2 == 0)
+
                 {
-                    oddsList.Add(10);
+                    evensList.Add(10);
                 }
-         
+
+                for (var o = 0; o < 10; i--)
+                    if (o % 2 == 0)
+                    {
+                        oddsList.Add(10);
+                    }
 
 
 
-            /* Now using foeach or for loops,
-             * display each List of even and odd numbers
-             *
-             * Try to be creative in your display
-             */
-            foreach (var num in evensList)
-            {
-                Console.WriteLine(num);
+
+                /* Now using foeach or for loops,
+                 * display each List of even and odd numbers
+                 *
+                 * Try to be creative in your display
+                 */
+                foreach (var num in evensList)
+                {
+                    Console.WriteLine(num);
+                }
+                Console.WriteLine();
+                Console.WriteLine(evensList.Count);
+                Console.WriteLine(evensList[10]);
+                Console.WriteLine(evensList[evensList.Count - 1]);
+
+                foreach (var num in oddsList)
+                {
+                    Console.WriteLine(num);
+                }
+                Console.WriteLine();
+                Console.WriteLine(oddsList.Count);
+                Console.WriteLine(oddsList[10]);
+                Console.WriteLine(oddsList[oddsList.Count - 1]);
             }
-            Console.WriteLine();
-            Console.WriteLine(evensList.Count);
-            Console.WriteLine(evensList[10]);
-            Console.WriteLine(evensList[evensList.Count - 1]);
+                
+              
 
         }
     }
 }
+
+
