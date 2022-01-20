@@ -10,13 +10,14 @@ namespace ArraysAndLists
             //TODO:
 
             // Create an int Array and populate numbers 1-10
-            int[] myArray1 = new int[10];
+            int[] myArray1 = new int[10] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
             /* Create two Lists of type int.
              * Name one List "evens"
              * Name the other List "odds"
              */
-            List<int> evensList = new List<int>();
+            List<int> evensList = new List<int>();  // var evensList = new List<int>();
+
             List<int> oddsList = new List<int>();
 
 
@@ -26,20 +27,20 @@ namespace ArraysAndLists
              * Then add those numbers to either the evens List
              * or the odds List
              */
-            for (var i = 0; i < 10; i++)
+            for (var i = 0; i < 10; i++) // another way to do it: for (var i = 0; < numbers.Legenth; i)
             {
-                if (i % 2 == 0)
+                if (i % 2 == 0) // if(numbers[i] % 2 == 0))
 
                 {
-                    evensList.Add(10);
+                    evensList.Add(i); //evens.Add(numbers[i]);
                 }
+                else
+                {
+                    oddsList.Add(i); //odds.Add(numbers[i]);
+                }
+            }
 
-                for (var o = 0; o < 10; i--)
-                    if (o % 2 == 0)
-                    {
-                        oddsList.Add(10);
-                    }
-
+                
 
 
 
@@ -48,14 +49,14 @@ namespace ArraysAndLists
                  *
                  * Try to be creative in your display
                  */
-                foreach (var num in evensList)
+                foreach (var num in evensList)  // foreach (var even in evensList)
                 {
-                    Console.WriteLine(num);
+                    Console.WriteLine(num); // Console.WriteLine($"{evenNum} is an even number.");
                 }
                 Console.WriteLine();
                 Console.WriteLine(evensList.Count);
-                Console.WriteLine(evensList[10]);
-                Console.WriteLine(evensList[evensList.Count - 1]);
+
+            Console.WriteLine();
 
                 foreach (var num in oddsList)
                 {
@@ -63,10 +64,8 @@ namespace ArraysAndLists
                 }
                 Console.WriteLine();
                 Console.WriteLine(oddsList.Count);
-                Console.WriteLine(oddsList[10]);
-                Console.WriteLine(oddsList[oddsList.Count - 1]);
-            }
-                
+              
+            
               
 
         }
